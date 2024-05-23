@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All About Platform</title>
+  <style>
+    /* CSS styles */
+    body {
+      background-image: url('./images/2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+    }
+    img.logo {
+      width: 100px;
+      height: 70px;
+      border-radius: 20px;
+    }
+    /* Navigation styles */
+    header {
+      display: flex;
+      justify-content: center; /* Centering the links */
+      align-items: center;
+      padding: 10px;
+      background-color: #8B4513; /* Dark Brown */
+    }
+    .logo {
+      margin-left: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+    li a {
+      padding: 10px;
+      text-decoration: none;
+      color: #ffffff; /* White */
+    }
+    a:visited {
+      color: #ffffff; /* White */
+    }
+    a:hover {
+      background-color: #CD853F; /* Peru */
+    }
+    a:active {
+      background-color: #ffffff; /* White */
+    }
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+    .dropdown-contents a {
+      color: #8B4513; /* Dark Brown */
+      padding: 12px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-contents a:hover {
+      background-color: #ffffff; /* White */
+    }
+    /* Form styles */
+   
+    /* Main Content Section styles */
+    section {
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: green;
+    }
+    h3 {
+      color: black;
+    }
+    ol {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+
+    <ul>
+      <li><a href="./home.html">HOME</a></li>
+      <li><a href="./about.html">ABOUT</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./service.html">SERVICE</a></li>
+      <!-- Tables dropdown -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: #ffffff; background-color: #CD853F; text-decoration: none; margin-right: 15px; border-radius: 5px;">Tables</a>
+        <div class="dropdown-contents">
+          <a href="./recipes.html">recipes</a>
+          <a href="./ingredients.html">ingredients</a>
+          <a href="./orders.html">orders</a>
+          <a href="./deliveries.html">deliveries</a>
+          <a href="./categories.html">categories</a>
+          <a href="./coupons.html">coupons</a>
+          <a href="./payment_methods.html">payment methods</a>
+          <a href="./reviews.html">reviews</a>
+          <a href="./users.html">Users</a>
+          <a href="./addresses.html">addresses</a>
+        </div>
+      </li>
+      <!-- Other navigation items -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: #ffffff; background-color: #CD853F; text-decoration: none; margin-right: 15px; border-radius: 5px;">Settings</a>
+        <div class="dropdown-contents">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+    <!-- Search form -->
+    
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <section>
+    <h2><u>OUR SERVICES</u></h2>
+    <p><h3>Online Workshops: Conducting virtual workshops where participants can learn about IoT concepts, technologies, and practical applications. These workshops may include live sessions, prerecorded videos, interactive presentations, and hands-on exercises.</h3></p>
+
+    <p><h3>Training Materials: Offering educational resources such as instructional videos, documentation, tutorials, and sample projects to help participants understand IoT fundamentals and advanced topics.</h3></p><br>
+
+    
+    <p><h3>IoT Development Tools: Providing access to development tools, software frameworks, libraries, and APIs for building IoT applications. These tools may include integrated development environments (IDEs), cloud platforms, and device management solutions.</h3></p>
+
+
+     <p><h3>Expert Support: Offering access to experienced IoT professionals who can provide guidance, answer questions, and offer assistance throughout the learning process. This support may be available through online forums, chat support, email, or virtual office hours.</h3></p><br>
+     
+      <p><h3>Community Interaction: Facilitating networking and collaboration among participants through online forums, discussion groups, social media channels, and virtual events. This allows learners to connect with peers, share knowledge, and collaborate on IoT projects.</h3></p><br>
+
+
+       <p><h3>Certification Programs: Offering certification or accreditation programs for participants who successfully complete IoT workshops and demonstrate proficiency in relevant skills and competencies. These certifications can enhance participants' credibility and career prospects in the IoT field.</h3></p><br>
+    <ul>
+      <li><h3>Hosts virtual workshops focused on IoT technology.
+Delivers educational content and resources related to IoT.
+Facilitates interaction between instructors and participants</h3></li>
+      <li><h3>Offers certification or recognition for workshop completion and gathers feedback for improvement.</h3></li>
+    </ul>
+  </section>
+
+
+</body>
+</html>

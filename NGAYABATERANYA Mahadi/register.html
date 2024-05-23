@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recipes Ingredients Delivery services</title>
+        <script>
+        function confirmInsert(){
+            return confirm('Do you want to create account?');
+        }
+    </script>
+    <style>
+        body{
+            background-image: url('./images/1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    	label{
+    		font-family: century;
+    		font-weight: bold;
+    		font-size: 20px;
+    	}
+    	h2{
+    		 font-family: Imprint MT Shadow;
+    		font-weight: bold;
+    		font-size:36px;
+    		color: blue;
+
+    	}
+    	button{
+    		padding: 10px;
+    		width: 140px;
+    	}
+    	h1{
+    		font-size: 24px;
+    		text-align: center;
+    		font-family: century;
+    		font-weight: bold;
+    		color: darkblue;
+    	}
+      .contain{
+            background-color: white;
+            width: 800px;
+            margin-top: 50px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <center>
+    <div class="contain">
+	<h1>Recipes Ingredients Delivery services</h1>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="registers.php" method="POST" onsubmit="return confirmInsert();">
+                    <h2 class="text-center">Create Account</h2>
+                    <div class="form-group">
+                        <label>user_id</label>
+                        <input type="text" name="user_id" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>name</label>
+                        <input type="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>email</label>
+                        <input type="text" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" name="submit" class="btn btn-primary">Create</button>
+                        <button type="reset" name="reset" class="btn btn-secondary">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Addresses</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS styles */
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Addresses Form</h1>
+                <form method="post" action="addresses.php">
+                    <div class="form-group">
+                        <label for="address_id">Address ID:</label>
+                        <input type="text" class="form-control" id="address_id" name="address_id" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_id">User ID:</label>
+                        <input type="text" class="form-control" id="user_id" name="user_id" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea class="form-control" id="address" name="address" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Insert</button>
+
+                    <a href="./home.html" class="btn btn-secondary btn-block mt-3">Go Back to Home</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

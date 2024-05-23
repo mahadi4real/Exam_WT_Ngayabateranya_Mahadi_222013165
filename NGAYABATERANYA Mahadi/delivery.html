@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delivery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS styles */
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Delivery Form</h1>
+                <form method="post" action="delivery.php">
+                    <div class="form-group">
+                        <label for="delivery_id">Delivery ID:</label>
+                        <input type="text" class="form-control" id="delivery_id" name="delivery_id" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="order_id">Order ID:</label>
+                        <input type="text" class="form-control" id="order_id" name="order_id" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status">Status:</label>
+                        <input type="text" class="form-control" id="status" name="status" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Insert</button>
+
+                    <a href="./home.html" class="btn btn-secondary btn-block mt-3">Go Back to Home</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

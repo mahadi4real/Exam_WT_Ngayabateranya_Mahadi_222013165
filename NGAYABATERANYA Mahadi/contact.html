@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <style>
+    /* CSS styles */
+    body {
+      background-image: url('./images/2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+    }
+    header {
+      background-color: #CD853F; /* Peru */
+      padding: 10px 0;
+      color: #ffffff;
+      text-align: center; /* Centering the links */
+    }
+    .logo img {
+      width: 80px;
+      height: auto;
+      border-radius: 50%;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block; /* Make the list items inline */
+    }
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+    li a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 10px;
+    }
+    li a:hover {
+      background-color: #8B4513; /* Dark Brown */
+    }
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+    .dropdown-contents a {
+      color: #8B4513; /* Dark Brown */
+      padding: 12px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-contents a:hover {
+      background-color: #ffffff; /* White */
+    }
+    /* Contact Section styles */
+    section {
+      background-color: black;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    ul.contact-info {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul.contact-info li {
+      margin-bottom: 10px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #CD853F; /* Peru */
+      color: #ffffff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #8B4513; /* Dark Brown */
+    }
+    p {
+      margin-top: 20px;
+    }
+    p a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #CD853F; /* Peru */
+    }
+    p a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with logo and navigation -->
+  <header>
+    <ul>
+      <li><a href="./home.html">HOME</a></li>
+      <li><a href="./about.html">ABOUT</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./service.html">SERVICE</a></li>
+      
+      <li class="dropdown">
+        <a href="#" style="text-decoration: none; color: #ffffff; padding: 10px; background-color: #CD853F; border-radius: 5px;">Settings</a>
+        <div class="dropdown-contents">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Contact Section -->
+  <section>
+    <h2 style="text-align: center; color: #CD853F;"><u>Contact Us</u></h2>
+    <ul class="contact-info">
+      <p><li><strong>Address:</strong>KK 395 ST  kicukiro , Kigali</li></p>
+      <p><li><strong>Phone:</strong> +(250) 780-721215</li></p>
+      <p><li><strong>Email:</strong> info@recipeingredientsdelivery.com</li></p>
+    </ul>
+    <form action="submit_contact" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="phone">Phone:</label><br>
+      <input type="tel" id="phone" name="phone"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+    <p>Connect with us on social media:</p>
+    <p>
+      <a href="https://www.youtube.com/recipeingredientsdelivery" target="_blank">YouTube</a>
+      <a href="https://www.facebook.com/recipeingredientsdelivery" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/recipeingredientsdelivery" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/recipeingredientsdelivery" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <!-- Footer (unchanged) -->
+  <!-- Footer code here -->
+</body>
+</html>

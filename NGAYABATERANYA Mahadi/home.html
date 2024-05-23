@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <style>
+    /* CSS styles */
+    body {
+     background-image: url('./images/2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+    }
+    img.logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+    }
+    /* Navigation styles */
+    header {
+      display: flex;
+      justify-content: center; /* Centering the links */
+      align-items: center;
+      padding: 10px;
+      background-color: #CD853F; /* Peru */
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    li {
+      margin-right: 10px;
+    }
+    li a {
+      padding: 10px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    a:hover {
+      background-color: #8B4513; /* Dark Brown */
+    }
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+    .dropdown-contents a {
+      color: #8B4513; /* Dark Brown */
+      padding: 12px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-contents a:hover {
+      background-color: #CD853F; /* Peru */
+    }
+    
+    /* Main Content Section styles */
+    section {
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: white;
+    }
+    h2 {
+      color: #483d8b;
+    }
+    ol {
+      color: black;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    ol li {
+      margin-bottom: 20px;
+    }
+    ol li b {
+      font-size: 20px;
+    }
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with logo and navigation -->
+  <header>
+    <ul>
+      <li><a href="./home.html">HOME</a></li>
+      <li><a href="./about.html">ABOUT</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./service.html">SERVICE</a></li>
+      <!-- Tables dropdown -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: #CD853F; text-decoration: none; margin-right: 15px; border-radius: 5px;">Tables</a>
+        <div class="dropdown-contents">
+          <a href="./recipes.html">recipes</a>
+          <a href="./ingredients.html">ingredients</a>
+          <a href="./orders.html">orders</a>
+          <a href="./deliveries.html">deliveries</a>
+          <a href="./categories.html">categories</a>
+          <a href="./coupons.html">coupons</a>
+          <a href="./payment_methods.html">payment methods</a>
+          <a href="./reviews.html">reviews</a>
+          <a href="./users.html">Users</a>
+          <a href="./addresses.html">addresses</a>
+        </div>
+      </li>
+      <!-- Other navigation items -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: #CD853F; text-decoration: none; margin-right: 15px; border-radius: 5px;">Settings</a>
+        <div class="dropdown-contents">
+          <a href="login.html">Login</a>
+          <a href="registers.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+    
+  </header>
+
+<section>
+  <h1><u>THESE ARE THE PURPOSE AND OBJECTIVES OF RECIPE INGREDIENTS DELIVERY SERVICES :</u></h1>
+  <ol type="number">
+    <li><b>Convenient Access to Fresh Ingredients</b></li> 
+    <li><b>Promotion of Home Cooking</b></li> 
+    <li><b>Nutritional Education</b></li>  
+    <li><b>Culinary Inspiration</b></li> 
+    <li><b>Supporting Local Farmers and Suppliers</b></li>
+    <li><b>Reducing Food Waste</b></li> 
+    <li><b>Enhancing Cooking Skills</b></li>
+    <li><b>Providing Healthy Meal Options</b></li>
+    <li><b>Convenience and Time-saving</b></li>
+    <li><b>Customer Satisfaction and Feedback</b></li>
+  </ol>
+</section>
+
+
+</body>
+</html>

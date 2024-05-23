@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All About Platform</title>
+  <style>
+    /* CSS styles */
+    body {
+     background-image: url('./images/2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+    }
+    img.logo {
+      width: 100px;
+      height: 70px;
+      border-radius: 20px;
+    }
+    /* Navigation styles */
+    header {
+      display: flex;
+      justify-content: center; /* Centering the links */
+      align-items: center;
+      padding: 10px;
+      background-color: #CD853F; /* Peru */
+    }
+    .logo {
+      margin-left: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    li {
+      margin-right: 10px;
+    }
+    li a {
+      padding: 10px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    a:hover {
+      background-color: #8B4513; /* Dark Brown */
+    }
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+    .dropdown-contents a {
+      color: #8B4513; /* Dark Brown */
+      padding: 12px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-contents a:hover {
+      background-color: #CD853F; /* Peru */
+    }
+    /* Form styles */
+    
+    /* Main Content Section styles */
+    section {
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: black;
+    }
+    h3 {
+      color: #ffffff;
+    }
+    ul {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with logo and navigation -->
+  <header>
+    <ul>
+      <li><a href="./home.html">HOME</a></li>
+      <li><a href="./about.html">ABOUT</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./service.html">SERVICE</a></li>
+      <!-- Tables dropdown -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: #CD853F; text-decoration: none; margin-right: 15px; border-radius: 5px;">Tables</a>
+        <div class="dropdown-contents">
+          <a href="./recipes.html">recipes</a>
+          <a href="./ingredients.html">ingredients</a>
+          <a href="./orders.html">orders</a>
+          <a href="./deliveries.html">deliveries</a>
+          <a href="./categories.html">categories</a>
+          <a href="./coupons.html">coupons</a>
+          <a href="./payment_methods.html">payment methods</a>
+          <a href="./reviews.html">reviews</a>
+          <a href="./users.html">Users</a>
+          <a href="./addresses.html">addresses</a>
+        </div>
+      </li>
+      <!-- Other navigation items -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: #CD853F; text-decoration: none; margin-right: 15px; border-radius: 5px;">Settings</a>
+        <div class="dropdown-contents">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+    
+    
+  </header>
+
+  <!-- Main Content Section -->
+  <section>
+    <h1><u>Our Mission to Deliver Fresh Ingredients</u></h1>
+    <p><h3>At Recipe Ingredients Delivery, our mission is to make cooking at home convenient, enjoyable, and nutritious. We aim to democratize access to fresh ingredients, empowering individuals to create delicious meals while fostering innovation and collaboration in the culinary world.</h3></p>
+    <p><h3>Our tasks include:</h3></p>
+    <ul>
+        <li><h3>Direct sourcing from local farms and suppliers to ensure quality and freshness</h3></li>
+        <li><h3>Curation of handpicked ingredients to inspire culinary creativity</h3></li>
+        <li><h3>Efficient delivery services to bring ingredients straight to your doorstep</h3></li>
+        <li><h3>Dedicated customer support for a seamless experience</h3></li>
+    </ul>
+    <h1><u>What Sets Us Apart</u></h1>
+    <p><h3>Recipe Ingredients Delivery offers a unique experience for home cooks and food enthusiasts:</h3></p>
+    <ul>
+        <li><h3>Premium selection of fresh, seasonal ingredients for flavorful dishes</h3></li>
+        <li><h3>Flexible delivery options to fit your schedule and lifestyle</h3></li>
+        <li><h3>Creative and chef-inspired recipes for culinary inspiration</h3></li>
+        <li><h3>Community-driven platform for sharing recipes, tips, and experiences</h3></li>
+    </ul>
+  </section>
+
+</body>
+</html>
